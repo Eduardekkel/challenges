@@ -19,6 +19,12 @@ const button = document.querySelector("[data-js=button]");
 //   secondInput.value = firstInput.value;
 // });
 
+// button.addEventListener("click", () => {
+//   secondInput.value = firstInput.value.toUpperCase();
+// });
+
 button.addEventListener("click", () => {
-  secondInput.value = firstInput.value.toUpperCase();
+  const temp = firstInput.value;
+  firstInput.value = secondInput.value;
+  secondInput.value = temp;
 });
