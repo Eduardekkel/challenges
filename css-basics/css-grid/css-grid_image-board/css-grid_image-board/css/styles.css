@@ -20,7 +20,6 @@ body {
   grid-template-rows: 300px 200px 300px;
   gap: 1rem;
   padding: 1rem;
-  /* Add styles here */
 }
 
 .image-board__image {
@@ -32,25 +31,22 @@ body {
 }
 
 .image-board__image--1 {
-  /* Add styles here */
 }
 
 .image-board__image--2 {
-  /* Add styles here */
+  grid-row: span 2;
 }
 
 .image-board__image--3 {
-  /* Add styles here */
 }
 
 .image-board__image--4 {
-  /* Add styles here */
+  grid-row: span 2;
 }
 
 .image-board__image--5 {
-  /* Add styles here */
+  grid-row: span 2;
 }
 
 .image-board__image--6 {
-  /* Add styles here */
 }
