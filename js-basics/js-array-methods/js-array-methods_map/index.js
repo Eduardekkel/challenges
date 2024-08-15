@@ -24,10 +24,25 @@ const cards = [
   },
 ];
 
-const lowerCaseAnswers = null; // ['as often as you like.', ...]
+const lowerCaseAnswers = cards.map((card) => card.answer.toLowerCase());
 
-const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
+console.log(lowerCaseAnswers);
+// Access the 'text' property and convert to lowercase
+// ['as often as you like.', ...]
 
-const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+const questionsAndAnswersTogether = cards.map(
+  (card) => `${card.question} - ${card.answer}`
+);
+
+console.log(questionsAndAnswersTogether);
+// ["How often can I use <header>? - As often as you like.", ...]
+
+const questionAndAnswer = cards.map((card) => ({
+  question: card.question,
+  answer: card.answer,
+}));
+
+console.log(questionAndAnswer);
+// [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };

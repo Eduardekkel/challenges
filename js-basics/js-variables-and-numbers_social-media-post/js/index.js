@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "ParachuteJump";
+const text = "description";
+const likes = 50 + 1;
+const userId = 2;
+const isReported = 1;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,9 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+console.log(title);
+console.log(text);
+console.log(likes);
+console.log(userId);
+console.log(isReported);
 // --^-- write your code here --^--
