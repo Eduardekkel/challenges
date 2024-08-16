@@ -24,11 +24,15 @@ startRaceButton.addEventListener("click", () => {
    **/
 
   // --v-- write your code here --v--
-
-  // --^-- write your code here --^--
-
-  startRaceButton.removeAttribute("disabled");
+  animateRunner(runner1)
+    .then(() => animateRunner(runner2))
+    .then(() => animateRunner(runner3))
+    .finally(() => startRaceButton.removeAttribute("disabled"));
 });
+// --^-- write your code here --^--
+
+//   startRaceButton.removeAttribute("disabled");
+// });
 
 /**
  * This is a wrapper around the Web Animations API
