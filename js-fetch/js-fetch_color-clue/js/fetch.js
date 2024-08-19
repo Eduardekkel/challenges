@@ -18,6 +18,6 @@ export async function fetchNewColor() {
    */
 
   // --v-- your code here --v--
-
+const response
   // --^-- your code here --^--
 }
