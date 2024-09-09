@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { LightButton, Icon, Text, Name, State } from "./Light.styled";
 
-export default function Light({ name }) {
-  const [isOn, setIsOn] = useState(false);
-
+export default function Light({ isOn, name, id }) {
   function handleToggle() {
     setIsOn((isOn) => !isOn);
   }
@@ -19,7 +17,7 @@ export default function Light({ name }) {
       <Icon $isOn={isOn}>💡</Icon>
       <Text>
         <Name>{name}</Name>
-        <State>{isOn ? "On" : "Off"}</State>
+        <State>{isOn ? "ON" : "OFF"}</State>
       </Text>
     </LightButton>
   );
