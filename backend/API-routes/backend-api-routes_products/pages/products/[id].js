@@ -11,7 +11,7 @@ export default function ProductDetailsPage() {
 
   return (
     <div>
-      <h1>Product Details: {data?.name}</h1>
+      <h1>Product Details: {product.name}</h1>
       <ul>
         <p>Description: {data?.description}</p>
         <li>Price: {data?.price + data?.currency}</li>
